@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}发布视频{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block main %}
+    <form action="" method="post">
+        <h3 class="page-title" style="text-align:center">发布视频</h3>
+        <div class="form-container" style="width:500px;margin:0 auto;text-align:right;">
+            <div class="form-group">
+                <input type="text" placeholder="请输入标题" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <textarea name="content" rows="8" class="form-control" placeholder="请输入内容"></textarea>
+            </div>
+            <div class="form-group">
+                <textarea name="desc" rows="4" class="form-control" placeholder="请输入简介"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" style="">提交</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
+
